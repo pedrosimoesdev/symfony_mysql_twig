@@ -1,3 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\carsController::index
+create:
+    path: /createCar
+    controller: App\Controller\carsController::create
+showCar:
+    path: /show/{id}
+    controller: App\Controller\carsController::show
+edit:
+    path: /editCar
+    controller: App\Controller\carsController::edit
+delete:
+    path: /carDelete/{id}
+    controller: App\Controller\carsController::delete
